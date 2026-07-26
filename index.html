@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es-CR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambitum | Consultoría en Geología, Minería, Hidrogeología y Trámites SETENA/SENARA</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ambitum es una firma consultora especializada en resolver problemas complejos en geología, hidrogeología, minería y medio ambiente. Trámites llave en mano ante SETENA, SENARA y DGM en Costa Rica.">
+    <meta name="keywords" content="Geología Costa Rica, Consultoría Ingeniería, Hidrogeología, Minería, Medio Ambiente, SETENA, SENARA, DGM, Estudios de Suelos">
+    <meta name="author" content="Ambitum Geología y Ambiente">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Ambitum | Ingeniería y Consultoría Geológica">
+    <meta property="og:description" content="Soluciones técnicas y rigor científico para proyectos complejos en Costa Rica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ambitumcr.com/">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Roboto for Headings, Inter for Body -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- SEO Meta Tags & Schema -->
+    <link rel="canonical" href="https://www.ambitumcr.com/">
+    <meta name="geo.region" content="CR" />
+    <meta name="geo.placename" content="Costa Rica" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://www.ambitumcr.com/#organization",
+                "name": "Ambitum Geología y Ambiente",
+                "url": "https://www.ambitumcr.com",
+                "logo": "https://www.ambitumcr.com/wp-content/uploads/2017/01/logo_naranja-4.png",
+                "description": "Consultoría especializada en geología, geotecnia, geofísica, hidrogeología, minería y medio ambiente en Costa Rica.",
+                "telephone": "+506-8308-9682",
+                "email": "info@ambitumcr.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Escazú",
+                    "addressRegion": "San José",
+                    "addressCountry": "CR"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 9.9195,
+                    "longitude": -84.1393
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Costa Rica"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/ambitumcr",
+                    "https://x.com/Ambitumcr",
+                    "https://www.linkedin.com/company/ambitum-geología-y-ambiente"
+                ],
+                "knowsAbout": ["Geología", "Geotecnia", "Geofísica", "Hidrogeología", "Minería", "Medio Ambiente", "SETENA", "Estudios de suelos", "EsIA"],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Servicios de Consultoría",
+                    "itemListElement": [
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estudios Geológicos", "description": "Cartografiado geológico, análisis de amenazas naturales, estudios de fallas y suelos."}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Geotecnia", "description": "Estudios de suelos, ensayos SPT, CBR, Proctor, estabilidad de taludes."}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Geofísica", "description": "Sísmica de refracción, tomografía eléctrica, análisis MASW."}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hidrogeología", "description": "Estudios de acuíferos, perforación de pozos, radios de protección, monitoreo."}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Minería", "description": "Exploración, estimación de reservas, concesiones mineras, regencias."}},
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medio Ambiente", "description": "Estudios de impacto ambiental EsIA, trámites SETENA, regencias ambientales."}}
+                    ]
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es un estudio de suelos y cuándo se necesita?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es un análisis geotécnico que evalúa las condiciones del subsuelo antes de construir. Combina ensayos de campo (SPT, DPL, CPT) con ensayos de laboratorio. Se requiere en nuevos desarrollos, edificaciones de varios niveles, zonas de riesgo y cuando lo exige SETENA, MINAE o las municipalidades."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es el ensayo SPT y para qué sirve?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "El SPT (Standard Penetration Test) es una prueba dinámica in situ que mide la resistencia del suelo. Se hinca un muestreador mediante un martillo de 63,5 kg y el valor N permite estimar la densidad relativa, capacidad portante y potencial de licuefacción. Es el método más utilizado en Costa Rica."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es el ensayo CBR y cómo se interpretan sus resultados?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "El CBR (California Bearing Ratio) mide la resistencia del suelo a la penetración. CBR menor a 5% indica suelos débiles, entre 5%-20% capacidad moderada, y mayor a 20% buena capacidad de soporte. Se usa en diseño de pavimentos rígidos y flexibles."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es la sísmica de refracción?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es un método geofísico no invasivo que utiliza ondas sísmicas generadas en la superficie para analizar la estructura del subsuelo. Entrega un modelo de velocidades, geometría del subsuelo y profundidad a la roca, sin necesidad de excavar ni perforar."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué se debe considerar al ubicar un pozo de agua en Costa Rica?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Cuatro criterios: disponibilidad del recurso hídrico, distancias mínimas a fuentes de contaminación, condiciones físicas del terreno y cumplimiento de la Ley de Aguas, reglamento de perforación y restricciones municipales."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es el radio de protección de un pozo y se puede reducir?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es el área de 40 m (ROP) alrededor de un pozo donde se restringen actividades para proteger el acuífero. Sí se puede reducir previa autorización del MINAE, presentando un estudio hidrogeológico que demuestre que el acuífero no será afectado."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Cuándo se requiere permiso para perforar un pozo en Costa Rica?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "El permiso es obligatorio para perforaciones exploratorias, cuando el uso excede el doméstico o implica aprovechamiento de aguas públicas. Se tramita ante la Dirección de Agua del MINAE vía la plataforma SIPECO."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué trámites se necesitan para obtener viabilidad ambiental en SETENA?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Se requiere presentar un formulario D1 o D2 según la categoría del proyecto, acompañado de estudios técnicos como el EsIA (Estudio de Impacto Ambiental). Ambitum gestiona todo el proceso ante SETENA."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es un estudio de infiltración y para qué sirve?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Es una prueba de percolación que mide la capacidad de absorción del suelo, fundamental para diseñar sistemas de tratamiento de aguas residuales con tanque séptico. Está normada por el Decreto 42075-S-MINAE y requiere mínimo 2 pruebas con saturación previa de 24 horas."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "¿Qué es un recurso mineral y en qué se diferencia de una reserva?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Los recursos se clasifican en inferido, indicado y medido según la confianza del dato. Una reserva mineral es un subconjunto del recurso que, tras aplicar modificadores económicos y legales, resulta económicamente extraíble. Los estándares JORC, NI 43-101 y CRIRSCO regulan su reporte."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./img/logo.png" alt="Ambitum" class="logo-img">
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="main-nav" class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">¿Quiénes somos?</a></li>
+                    <li><a href="#servicios" class="nav-link">Áreas de Práctica</a></li>
+                    <li><a href="#capacidad" class="nav-link">Nuestra Capacidad</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="#contacto" class="btn btn-primary nav-cta">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-background"></div>
+            <div class="container hero-content">
+                <div class="hero-text-wrapper reveal-up">
+                    <span class="badge">Consultoría & Ingeniería Aplicada</span>
+                    <h1 class="hero-title">Capacidad resolutiva en <span class="highlight">Geociencias</span> y <span class="highlight">Ambiente</span></h1>
+                    <p class="hero-subtitle">Afrontamos y resolvemos los desafíos técnicos más exigentes. Proveemos estudios de suelos, modelado geológico y gestión ambiental con absoluto rigor científico para viabilizar sus proyectos.</p>
+                    <div class="hero-actions">
+                        <a href="#servicios" class="btn btn-primary">Nuestras Áreas de Práctica</a>
+                        <a href="#contacto" class="btn btn-secondary">Evaluar un Proyecto</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-fade">
+                    <div class="hero-quick-contact">
+                        <h3>Consulta Técnica Rápida</h3>
+                        <p>Inicie la evaluación de su proyecto con un asesor técnico especializado.</p>
+                        <form id="heroContactForm" class="hero-form">
+                            <div class="form-group-hero">
+                                <input type="text" id="heroNombre" required placeholder="Nombre / Empresa">
+                            </div>
+                            <div class="form-group-hero">
+                                <input type="email" id="heroEmail" required placeholder="correo@empresa.com">
+                            </div>
+                            <div class="form-group-hero">
+                                <textarea id="heroMensaje" rows="3" required placeholder="Describa brevemente su requerimiento técnico..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Solicitar Evaluación <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#servicios" aria-label="Desplazarse abajo">
+                    <span class="scroll-icon"><i class="fa-solid fa-arrow-down"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Trust Bar -->
+        <section class="trust-bar">
+            <div class="container">
+                <div class="trust-content">
+                    <span class="trust-label">Acreditados ante</span>
+                    <div class="trust-items">
+                        <div class="trust-item"><i class="fa-solid fa-building-columns"></i> SETENA</div>
+                        <div class="trust-item"><i class="fa-solid fa-droplet"></i> SENARA</div>
+                        <div class="trust-item"><i class="fa-solid fa-mountain"></i> DGM</div>
+                        <div class="trust-item"><i class="fa-solid fa-leaf"></i> MINAE</div>
+                        <div class="trust-item"><i class="fa-solid fa-users"></i> CGCR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="nosotros" class="section bg-dark text-white">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text reveal-left">
+                        <span class="badge">Nuestra Trayectoria</span>
+                        <h2 class="section-title text-white">10 años de evolución técnica</h2>
+                        <p class="section-description text-light">En Ambitum Geología y Ambiente hemos aportado soluciones técnicas en geología, ambiente, minería e hidrogeología durante más de una década, basadas siempre en la ética profesional, el conocimiento científico y un firme compromiso ambiental.</p>
+                        <p class="section-description text-light">A lo largo de estos años hemos acompañado a instituciones públicas y privadas en la toma de decisiones técnicas, enfrentando desafíos complejos y garantizando la viabilidad de proyectos a nivel nacional.</p>
+                        
+                        <div class="about-stats mt-4">
+                            <div class="stat-box">
+                                <span class="stat-num" data-target="10">+0</span>
+                                <span class="stat-desc">Años de Rigor Científico</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num" data-target="5000">0</span>
+                                <span class="stat-desc">Hectáreas Evaluadas</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num" data-target="100">0%</span>
+                                <span class="stat-desc">Compromiso Ético</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-values reveal-right">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                            <div class="value-content">
+                                <h4>Ética Profesional</h4>
+                                <p>Transparencia absoluta en cada dictamen técnico y estudio emitido.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                            <div class="value-content">
+                                <h4>Rigor Científico</h4>
+                                <p>Metodologías estandarizadas y análisis cuantitativo de precisión.</p>
+                            </div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <div class="value-content">
+                                <h4>Compromiso Ambiental</h4>
+                                <p>Armonía técnica entre el desarrollo de infraestructura y la conservación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="section bg-light">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <h2 class="section-title">Áreas de Práctica</h2>
+                    <p class="section-description">Nuestra firma provee soporte técnico integral a lo largo de todo el ciclo de vida del proyecto, asegurando cumplimiento normativo y estabilidad estructural.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal-up" style="--delay: 0.1s;">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-layer-group service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Geología</h3>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Cartografiado geológico</li>
+                            <li><i class="fa-solid fa-check"></i> Estudios neotectónicos y fallas</li>
+                            <li><i class="fa-solid fa-check"></i> Clasificación de macizos rocosos</li>
+                            <li><i class="fa-solid fa-check"></i> Amenazas naturales y riesgos deslizamiento</li>
+                            <li><i class="fa-solid fa-check"></i> Modelado geológico estructural</li>
+                            <li><i class="fa-solid fa-check"></i> Gestión y viabilidad de proyectos</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar Asesoría <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" style="--delay: 0.2s;">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-compass-drafting service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Geotecnia</h3>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Estudios de suelos para construcción</li>
+                            <li><i class="fa-solid fa-check"></i> Ensayos de laboratorio de mecánica de suelos</li>
+                            <li><i class="fa-solid fa-check"></i> Estabilidad de taludes y obras contención</li>
+                            <li><i class="fa-solid fa-check"></i> Capacidad de soporte de suelos (CBR)</li>
+                            <li><i class="fa-solid fa-check"></i> Diseño geotécnico de cimentaciones</li>
+                            <li><i class="fa-solid fa-check"></i> Control de compactación e inspección</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar Asesoría <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" style="--delay: 0.3s;">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-wave-square service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Geofísica</h3>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Tomografía eléctrica y SEVs</li>
+                            <li><i class="fa-solid fa-check"></i> Refracción sísmica y MASW</li>
+                            <li><i class="fa-solid fa-check"></i> Caracterización no destructiva del subsuelo</li>
+                            <li><i class="fa-solid fa-check"></i> Parámetros dinámicos para diseño sísmico</li>
+                            <li><i class="fa-solid fa-check"></i> Localización de fallas y cavidades</li>
+                            <li><i class="fa-solid fa-check"></i> Ensayos electromagnéticos aplicados</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar Asesoría <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" style="--delay: 0.4s;">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-water service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Hidrogeología</h3>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Permisos de perforación SENARA</li>
+                            <li><i class="fa-solid fa-check"></i> Diseño y perforación de pozos de agua</li>
+                            <li><i class="fa-solid fa-check"></i> Pruebas de bombeo e infiltración</li>
+                            <li><i class="fa-solid fa-check"></i> Estudios de vulnerabilidad de acuíferos</li>
+                            <li><i class="fa-solid fa-check"></i> Aforos de nacientes y pozos</li>
+                            <li><i class="fa-solid fa-check"></i> Tránsito y modelado de contaminantes</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar Asesoría <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" style="--delay: 0.5s;">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-truck-monster service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Minería</h3>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Concesiones Dirección Geología y Minas</li>
+                            <li><i class="fa-solid fa-check"></i> Exploración y regencias mineras</li>
+                            <li><i class="fa-solid fa-check"></i> Diseño de tajos y plan de minado</li>
+                            <li><i class="fa-solid fa-check"></i> Estimación de recursos y reservas</li>
+                            <li><i class="fa-solid fa-check"></i> Concesiones cauces dominio público</li>
+                            <li><i class="fa-solid fa-check"></i> Modelado tridimensional de yacimientos</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar Asesoría <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" style="--delay: 0.6s;">
+                        <div class="service-icon-wrapper">
+                            <i class="fa-solid fa-microscope service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Medio Ambiente</h3>
+                        <ul class="service-list">
+                            <li><i class="fa-solid fa-check"></i> Viabilidad ambiental SETENA (D1, D2)</li>
+                            <li><i class="fa-solid fa-check"></i> Estudios de impacto ambiental (EsIA)</li>
+                            <li><i class="fa-solid fa-check"></i> Concesiones Dirección de Agua (MINAE)</li>
+                            <li><i class="fa-solid fa-check"></i> Regencias ambientales de obra</li>
+                            <li><i class="fa-solid fa-check"></i> Índices de fragilidad ambiental</li>
+                            <li><i class="fa-solid fa-check"></i> Trámites ambientales llave en mano</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar Asesoría <i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="capacidad" class="section pillars-section">
+            <div class="container">
+                <div class="pillars-layout">
+                    <div class="pillars-text reveal-left">
+                        <h2 class="section-title">Rigor Técnico y Confianza</h2>
+                        <p class="section-description">No somos solo asesores; somos solucionadores de problemas. Cada proyecto es analizado con profundidad científica y herramientas tecnológicas de punta para garantizar viabilidad y mitigar riesgos.</p>
+                        <a href="#contacto" class="btn btn-primary mt-4">Programar una Consulta</a>
+                    </div>
+                    
+                    <div class="pillars-grid">
+                        <div class="pillar-item reveal-up" style="--delay: 0.1s;">
+                            <div class="pillar-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <h4>Experiencia Comprobada</h4>
+                            <p>Historial de éxito en proyectos complejos a nivel nacional.</p>
+                        </div>
+                        <div class="pillar-item reveal-up" style="--delay: 0.2s;">
+                            <div class="pillar-icon"><i class="fa-solid fa-users-gear"></i></div>
+                            <h4>Profesionales Acreditados</h4>
+                            <p>Equipo inscrito en el Colegio de Geólogos de Costa Rica (CGCR).</p>
+                        </div>
+                        <div class="pillar-item reveal-up" style="--delay: 0.3s;">
+                            <div class="pillar-icon"><i class="fa-solid fa-cubes"></i></div>
+                            <h4>Tecnología Aplicada</h4>
+                            <p>Modelado 2D y 3D preciso utilizando software especializado.</p>
+                        </div>
+                        <div class="pillar-item reveal-up" style="--delay: 0.4s;">
+                            <div class="pillar-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h4>Control de Calidad</h4>
+                            <p>Estándares estrictos de revisión para cada informe emitido.</p>
+                        </div>
+                        <div class="pillar-item reveal-up" style="--delay: 0.5s;">
+                            <div class="pillar-icon"><i class="fa-solid fa-sitemap"></i></div>
+                            <h4>Gestión Estructurada</h4>
+                            <p>Procesos alineados a las normativas del Project Management Institute (PMI®).</p>
+                        </div>
+                        <div class="pillar-item reveal-up" style="--delay: 0.6s;">
+                            <div class="pillar-icon"><i class="fa-solid fa-flask"></i></div>
+                            <h4>Base Científica</h4>
+                            <p>Soluciones fundamentadas en investigación y datos medibles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner Section -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-content reveal-up">
+                    <div class="cta-text">
+                        <h2>¿Tiene un proyecto que requiere evaluación técnica?</h2>
+                        <p>Nuestro equipo de geólogos e ingenieros está listo para analizar su caso y proveer soluciones de alta precisión.</p>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary btn-lg">Iniciar Evaluación <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="section contact-section">
+            <div class="container">
+                <div class="contact-wrapper reveal-up">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Atención Corporativa</h2>
+                        <p class="contact-subtitle">Contáctenos para someter su proyecto a nuestra evaluación técnica.</p>
+                        
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fa-solid fa-building"></i>
+                                <div>
+                                    <strong>Oficinas</strong>
+                                    <p>Naranjo, Escazú y Turrialba, Costa Rica</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <strong>Contacto Telefónico</strong>
+                                    <p>(+506) 8308-9682 | 8374-7669 | 8303-1235</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong>Correo Institucional</strong>
+                                    <p><a href="mailto:info@ambitumcr.com">info@ambitumcr.com</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" action="#" method="POST" id="contactForm">
+                            <div class="form-group">
+                                <label for="nombre">Empresa / Nombre <span class="required">*</span></label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Nombre de la entidad o solicitante">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="correo@empresa.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensaje">Detalles del Proyecto <span class="required">*</span></label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describa brevemente el problema técnico o requerimiento..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar Solicitud <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="./img/logo.png" alt="Ambitum" class="logo-img">
+                </a>
+                <p>Consultores expertos en Geología y Ambiente. Proveemos solidez técnica y mitigación de riesgos para el desarrollo de proyectos complejos en Costa Rica y la región.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">¿Quiénes somos?</a></li>
+                    <li><a href="#servicios">Áreas de Práctica</a></li>
+                    <li><a href="#capacidad">Nuestra Capacidad</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Áreas de Práctica</h3>
+                <ul>
+                    <li><a href="#servicios">Geología</a></li>
+                    <li><a href="#servicios">Geotecnia</a></li>
+                    <li><a href="#servicios">Geofísica</a></li>
+                    <li><a href="#servicios">Hidrogeología</a></li>
+                    <li><a href="#servicios">Minería</a></li>
+                    <li><a href="#servicios">Medio Ambiente</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container flex-between">
+                <p>&copy; 2026 Ambitum Geología y Ambiente. Todos los derechos reservados.</p>
+                <p>Diseño corporativo e ingeniería web.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./js/terrain.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
